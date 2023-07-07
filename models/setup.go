@@ -32,6 +32,10 @@ func ConnectDB() {
 	}
 
 	db.AutoMigrate(&Product{})
+	// What is AutoMigrate?
+	// AutoMigrate will ONLY create tables, missing columns and missing indexes, and WON’T change existing column’s type or delete unused columns to protect your data.
 
-	DB = db
+	DB = db // What is it? DB is a variable
+	// Please explain more details?
+	// DB is a variable that is used to connect to the database
 }

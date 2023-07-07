@@ -14,7 +14,7 @@ func main() {
 
 	r.GET("/api/products", productcontroller.Index)
 	r.GET("/api/product/:id", productcontroller.Show)
-	r.POST("/api/product/store", productcontroller.Store)
+	r.POST("/api/product/store", productcontroller.Store) //CRUD
 	r.PUT("/api/product/:id", productcontroller.Update)
 	r.DELETE("/api/product", productcontroller.Delete)
 
