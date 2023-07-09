@@ -61,7 +61,8 @@ func Store(c *gin.Context){
 		c.JSON(http.StatusBadRequest, gin.H{"error": err.Error()})
 		return
 	} // err := c.ShouldBindJSON(&product); err != nil, ini tuh kaya for, soalnya assign value ke product dan kondisinya.
-	// Kalau nill is a good thing, kalau tidak nill, maka akan return error.
+	// Kalau nill is a good thing, kalau tidak nill, maka akan return error karena tidak sesuai dengan struct data yang dibuat
+	// c itu melempar data-nya, isinya body-nya
 
 	// c.ShouldBindJSON function is used to bind the request body to a struct. If the request body doesn’t match the struct, it will return an error.
 
