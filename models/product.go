@@ -1,6 +1,5 @@
 package models
-
-type Product struct {
+type Product struct { // ini untuk melakukan validasi data
 	ID          int64   `json:"id" gorm:"primary_key"`
 	Name        string `json:"name" gorm:"type:varchar(100)"`
 	Description string `json:"description" gorm:"type:varchar(100)"`

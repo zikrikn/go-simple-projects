@@ -10,7 +10,6 @@ import (
 	"gorm.io/gorm"
 )
 
-
 var DB *gorm.DB
 
 // ConnectDB connects to the database
@@ -35,7 +34,6 @@ func ConnectDB() {
 	// What is AutoMigrate?
 	// AutoMigrate digunakan agar bisa ORM-nya digunakan, karena langsung mengintegrasikan dengan database
 
-	DB = db // What is it? DB is a variable
-	// Please explain more details?
+	DB = db
 	// DB is a variable that is used to connect to the database
 }
